@@ -24,13 +24,13 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const consumableBrands = [
-  { name: "Lincoln Electric", origin: "USA" },
+  { name: "Lincoln Electric", origin: "USA", logo: "/brands/lincoln.png", width: 140 },
   { name: "Metrode", origin: "UK" },
   { name: "Techalloy", origin: "USA" },
-  { name: "Kiswel", origin: "Korea" },
-  { name: "Nihonweld", origin: "Philippines" },
-  { name: "Welding Alloys", origin: "UK" },
-  { name: "Daiko", origin: "Italy" },
+  { name: "Kiswel", origin: "Korea", logo: "/brands/kiswel.png", width: 100 },
+  { name: "Nihonweld", origin: "Philippines", logo: "/brands/nihonweld.png", width: 120 },
+  { name: "Welding Alloys", origin: "UK", logo: "/brands/welding_alloys.png", width: 120 },
+  { name: "Daiko", origin: "Italy", logo: "/brands/daiko.png", width: 100 },
 ];
 
 const equipmentBrands = [
@@ -201,10 +201,19 @@ export default function HomePage() {
 
           <div className="mb-2">
             <p className="text-center text-[10px] text-slate-400 tracking-wider uppercase mb-4">{t("brandsConsumablesLabel")}</p>
-            <div className="flex flex-wrap justify-center gap-6 md:gap-10 items-center mb-8">
+            <div className="flex flex-wrap justify-center gap-8 md:gap-14 items-center mb-8">
               {consumableBrands.map((brand) => (
-                <div key={brand.name} className="flex flex-col items-center">
-                  <span className="font-bold text-[#0B3D91] text-sm md:text-base tracking-tight">{brand.name}</span>
+                <div key={brand.name} className="flex flex-col items-center gap-2">
+                  {brand.logo ? (
+                    <Image src={brand.logo} alt={brand.name} width={brand.width} height={40} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-8 md:h-10 w-auto" />
+                  ) : (
+                    <span className={cn(
+                      "font-bold text-xl tracking-tight transition-colors opacity-70 hover:opacity-100",
+                      brand.name === "Metrode" ? "text-slate-700 hover:text-[#0B3D91]" : "text-slate-700 hover:text-[#F97316] italic"
+                    )}>
+                      {brand.name === "Metrode" ? "METRODE" : brand.name}
+                    </span>
+                  )}
                   {brand.origin && <span className="text-[10px] text-slate-400">{brand.origin}</span>}
                 </div>
               ))}
