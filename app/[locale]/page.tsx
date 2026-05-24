@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { FadeIn } from "@/components/fade-in";
 import {
   CheckCircle2,
   Flame,
@@ -92,20 +93,23 @@ export default function HomePage() {
             priority
           />
         </div>
-        <div className="relative z-10 container mx-auto px-4 md:px-6 text-center text-white">
-          <div className="inline-flex items-center gap-2 bg-[#F97316]/20 border border-[#F97316]/40 text-[#F97316] px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-            Est. October 2002 · Jakarta Utara, Indonesia
-          </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-            {t("heroTagline")}
+        <FadeIn className="container relative z-10 mx-auto px-4 md:px-6 text-center">
+          <Badge className="mb-6 bg-white/10 text-white border-white/20 hover:bg-white/20 px-4 py-1.5 text-sm">
+            {t("heroBadge")}
+          </Badge>
+          
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight max-w-4xl mx-auto">
+            {t("heroTitle")}
           </h1>
-          <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10">
+          
+          <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
             {t("heroSubtitle")}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href={`/${locale}/products`}
-              className={cn(buttonVariants({ size: "lg" }), "bg-[#F97316] hover:bg-orange-600 text-white text-base px-8 border-transparent")}
+              className={cn(buttonVariants({ size: "lg" }), "bg-[#F97316] hover:bg-orange-600 text-white border-transparent text-base px-8")}
             >
               {t("heroCta1")}
             </Link>
@@ -118,7 +122,7 @@ export default function HomePage() {
           </div>
 
           {/* Stat row */}
-          <div className="mt-14 grid grid-cols-3 gap-4 max-w-sm mx-auto border-t border-white/10 pt-10">
+          <FadeIn delay={300} className="mt-14 grid grid-cols-3 gap-4 max-w-sm mx-auto border-t border-white/10 pt-10">
             <div>
               <div className="text-3xl font-bold text-[#F97316]">{t("statsYears")}</div>
               <div className="text-xs text-slate-400 mt-1">{t("statsYearsLabel")}</div>
@@ -131,8 +135,8 @@ export default function HomePage() {
               <div className="text-3xl font-bold text-[#F97316]">{t("statsBrands")}</div>
               <div className="text-xs text-slate-400 mt-1">{t("statsBrandsLabel")}</div>
             </div>
-          </div>
-        </div>
+          </FadeIn>
+        </FadeIn>
       </section>
 
       {/* Premium Infinite Client Marquee */}
@@ -194,12 +198,12 @@ export default function HomePage() {
 
       {/* Brands strip */}
       <section className="py-12 bg-white border-b">
-        <div className="container mx-auto px-4 md:px-6">
+        <FadeIn className="container mx-auto px-4 md:px-6">
           <p className="text-center text-sm font-semibold text-slate-400 tracking-widest uppercase mb-8">
             {t("brandsTitle")}
           </p>
 
-          <div className="mb-2">
+          <FadeIn className="mb-2">
             <p className="text-center text-[10px] text-slate-400 tracking-wider uppercase mb-4">{t("brandsConsumablesLabel")}</p>
             <div className="flex flex-wrap justify-center gap-8 md:gap-14 items-center mb-8">
               {consumableBrands.map((brand) => (
@@ -218,9 +222,9 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-          </div>
+          </FadeIn>
 
-          <div className="border-t border-slate-100 pt-6">
+          <FadeIn className="border-t border-slate-100 pt-6">
             <p className="text-center text-[10px] text-slate-400 tracking-wider uppercase mb-4">{t("brandsEquipmentLabel")}</p>
             <div className="flex flex-wrap justify-center gap-8 md:gap-14 items-center">
               {equipmentBrands.map((brand) => (
@@ -234,29 +238,31 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
+          </FadeIn>
+        </FadeIn>
       </section>
 
       {/* Industries */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-24 bg-slate-50">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">{t("industriesTitle")}</h2>
-            <p className="text-slate-500 max-w-xl mx-auto">{t("industriesSubtitle")}</p>
-          </div>
+          <FadeIn className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">{t("industriesTitle")}</h2>
+            <p className="text-slate-500 text-lg leading-relaxed">{t("industriesSubtitle")}</p>
+          </FadeIn>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {industryKeys.map((key) => (
-              <Link key={key} href={`/${locale}/industries`}>
-                <Card className="group hover:border-[#0B3D91] hover:shadow-md transition-all cursor-pointer h-full">
-                  <CardContent className="p-6 flex flex-col items-center text-center gap-3">
-                    <div className="text-[#0B3D91] group-hover:text-[#F97316] transition-colors">
-                      {industryIcons[key]}
-                    </div>
-                    <span className="font-semibold text-slate-800 text-sm">{tIndustries(`${key}.name`)}</span>
-                  </CardContent>
-                </Card>
-              </Link>
+            {industryKeys.map((key, index) => (
+              <FadeIn key={key} delay={100 * index} direction="up">
+                <Link href={`/${locale}/industries`}>
+                  <Card className="group hover:border-[#0B3D91] hover:shadow-md transition-all cursor-pointer h-full">
+                    <CardContent className="p-6 flex flex-col items-center text-center gap-3">
+                      <div className="text-[#0B3D91] group-hover:text-[#F97316] transition-colors">
+                        {industryIcons[key]}
+                      </div>
+                      <span className="font-semibold text-slate-800 text-sm">{tIndustries(`${key}.name`)}</span>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </FadeIn>
             ))}
           </div>
         </div>
