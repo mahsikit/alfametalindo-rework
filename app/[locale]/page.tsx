@@ -154,25 +154,21 @@ export default function HomePage() {
               key={groupIndex} 
               className="flex items-center gap-16 sm:gap-24 min-w-full animate-marquee hover-pause pr-16 sm:pr-24"
             >
-              {/* Image Logos */}
-              <div className="flex items-center gap-4 shrink-0">
-                <Image src="/clients/pertamina.png" alt="Pertamina" width={50} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain" />
-                <span className="font-bold text-2xl text-slate-800 tracking-tight">PERTAMINA</span>
-              </div>
-              <div className="flex items-center gap-4 shrink-0">
-                <Image src="/clients/total.png" alt="TotalEnergies" width={45} height={45} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain" />
-                <span className="font-bold text-xl text-slate-800 tracking-tight">TotalEnergies</span>
-              </div>
-              <div className="flex items-center gap-3 shrink-0">
-                <Image src="/clients/medco.png" alt="Medco E&P" width={40} height={40} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain" />
-                <span className="font-bold text-xl text-slate-800 tracking-tight">MedcoEnergi</span>
-              </div>
-              <div className="flex items-center gap-3 shrink-0">
-                <Image src="/clients/hess.png" alt="Hess" width={45} height={45} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain" />
-                <span className="font-black text-2xl text-slate-800 tracking-tighter">HESS</span>
+              {/* Premium Typographic Logos */}
+              <div className="flex items-center shrink-0">
+                <span className="font-bold text-3xl text-slate-800 tracking-tighter">PERTAMINA</span>
               </div>
               <div className="flex items-center shrink-0">
-                <Image src="/clients/serica.png" alt="Serica Energy" width={110} height={45} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain" />
+                <span className="font-bold text-2xl text-slate-800 tracking-tight">TotalEnergies</span>
+              </div>
+              <div className="flex items-center shrink-0">
+                <span className="font-bold text-2xl text-slate-800 tracking-tight">MedcoEnergi</span>
+              </div>
+              <div className="flex items-center shrink-0">
+                <span className="font-black text-3xl text-slate-800 tracking-tighter">HESS</span>
+              </div>
+              <div className="flex items-center shrink-0">
+                <span className="font-semibold text-2xl text-slate-800 tracking-widest uppercase">Serica</span>
               </div>
               
               {/* Styled Text Logos for the rest */}
