@@ -16,7 +16,7 @@ const consumableBrands = [
   { name: "Metrode", country: "UK", spec: "Premium exotic-alloy filler metals for oil & gas and LNG", logo: "/brands/metrode.png", width: 140 },
   { name: "Techalloy", country: "USA", spec: "Nickel-based welding alloys (Inconel, Hastelloy)", logo: "/brands/techalloy.png", width: 140 },
   { name: "Kiswel", country: "Korea", spec: "Wide-range welding consumables", logo: "/brands/kiswel.png", width: 100 },
-  { name: "Nihonweld", country: "Philippines", spec: "Stainless steel & hard-surfacing consumables", logo: "/brands/nihonweld.png", width: 120 },
+  { name: "Nihonweld", country: "Japan", spec: "Stainless steel & hard-surfacing consumables", logo: "/brands/nihonweld.png", width: 120 },
   { name: "Welding Alloys", country: "UK", spec: "Hard-surfacing and wear-resistant consumables", logo: "/brands/welding_alloys.png", width: 120 },
   { name: "Daiko", country: "Italy", spec: "High-temperature welding consumables", logo: "/brands/daiko.png", width: 100 },
 ];

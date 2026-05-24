@@ -10,7 +10,7 @@ Source: alfametalindo.com/about-us.php (verbatim listing)
 | Metrode Products Ltd | UK | Exotic-alloy filler metals for oil & gas, LNG, petrochemical — premium energy-market line |
 | Techalloy Inc. | USA | Nickel-based welding alloys (Inconel, Hastelloy, etc.) |
 | Welding Alloys | UK | Hard-surfacing and wear-resistant consumables |
-| Nihonweld | Philippines | Stainless steel consumables and hard surfacing |
+| Nihonweld | Japan | Stainless steel consumables and hard surfacing |
 | Kiswel | Korea | Wide-range welding consumables |
 | Daiko Welding Consumables | Italy | High-temperature welding consumables |
 

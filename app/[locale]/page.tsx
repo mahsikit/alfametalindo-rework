@@ -30,7 +30,7 @@ const consumableBrands = [
   { name: "Metrode", origin: "UK", logo: "/brands/metrode.png", width: 140 },
   { name: "Techalloy", origin: "USA", logo: "/brands/techalloy.png", width: 140 },
   { name: "Kiswel", origin: "Korea", logo: "/brands/kiswel.png", width: 100 },
-  { name: "Nihonweld", origin: "Philippines", logo: "/brands/nihonweld.png", width: 120 },
+  { name: "Nihonweld", origin: "Japan", logo: "/brands/nihonweld.png", width: 120 },
   { name: "Welding Alloys", origin: "UK", logo: "/brands/welding_alloys.png", width: 120 },
   { name: "Daiko", origin: "Italy", logo: "/brands/daiko.png", width: 100 },
 ];
