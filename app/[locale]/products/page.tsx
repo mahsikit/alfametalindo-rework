@@ -132,13 +132,13 @@ export default function ProductsPage() {
               <div className="flex items-center shrink-0">
                 <Image src="/brands/nihonweld.png" alt="Nihonweld" width={160} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
               </div>
-              {/* Metrode (Text) */}
+              {/* Metrode */}
               <div className="flex items-center shrink-0">
-                <span className="font-bold text-2xl text-slate-400 hover:text-[#0B3D91] transition-colors tracking-tight">METRODE</span>
+                <Image src="/brands/metrode.png" alt="Metrode" width={180} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-12 w-auto" />
               </div>
-              {/* Techalloy (Text) */}
+              {/* Techalloy */}
               <div className="flex items-center shrink-0">
-                <span className="font-bold text-2xl text-slate-400 hover:text-[#F97316] transition-colors tracking-tight italic">Techalloy</span>
+                <Image src="/brands/techalloy.png" alt="Techalloy" width={180} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-12 w-auto" />
               </div>
             </div>
           ))}

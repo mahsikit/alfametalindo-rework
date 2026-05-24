@@ -25,8 +25,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 const consumableBrands = [
   { name: "Lincoln Electric", origin: "USA", logo: "/brands/lincoln.png", width: 140 },
-  { name: "Metrode", origin: "UK" },
-  { name: "Techalloy", origin: "USA" },
+  { name: "Metrode", origin: "UK", logo: "/brands/metrode.png", width: 140 },
+  { name: "Techalloy", origin: "USA", logo: "/brands/techalloy.png", width: 140 },
   { name: "Kiswel", origin: "Korea", logo: "/brands/kiswel.png", width: 100 },
   { name: "Nihonweld", origin: "Philippines", logo: "/brands/nihonweld.png", width: 120 },
   { name: "Welding Alloys", origin: "UK", logo: "/brands/welding_alloys.png", width: 120 },
