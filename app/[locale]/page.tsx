@@ -170,22 +170,22 @@ export default function HomePage() {
               <div className="flex items-center shrink-0">
                 <Image src="/clients/hess.png" alt="Hess" width={160} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
               </div>
+              <div className="flex items-center shrink-0">
+                <Image src="/clients/serica.svg" alt="Serica Energy" width={160} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
+              </div>
+              <div className="flex items-center shrink-0">
+                <Image src="/clients/pgn.png" alt="PGN" width={180} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
+              </div>
+              <div className="flex items-center shrink-0">
+                <Image src="/clients/petrochina.png" alt="PetroChina" width={180} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
+              </div>
+              <div className="flex items-center shrink-0">
+                <Image src="/clients/cnooc.png" alt="CNOOC" width={160} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
+              </div>
               
               {/* Styled Text Logos for the rest */}
               <div className="shrink-0 flex items-center">
-                <span className="font-semibold text-2xl text-slate-400 hover:text-slate-800 transition-colors tracking-widest uppercase">Serica</span>
-              </div>
-              <div className="shrink-0 flex items-center">
-                <span className="font-bold text-3xl text-slate-400 hover:text-blue-600 transition-colors tracking-widest uppercase">PGN</span>
-              </div>
-              <div className="shrink-0 flex items-center">
                 <span className="font-bold text-2xl text-slate-400 hover:text-red-600 transition-colors tracking-tight italic">ConocoPhillips</span>
-              </div>
-              <div className="shrink-0 flex items-center">
-                <span className="font-bold text-3xl text-slate-400 hover:text-red-500 transition-colors tracking-tighter">PetroChina</span>
-              </div>
-              <div className="shrink-0 flex items-center">
-                <span className="font-black text-3xl text-slate-400 hover:text-blue-700 transition-colors tracking-normal">CNOOC</span>
               </div>
             </div>
           ))}
