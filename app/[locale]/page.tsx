@@ -34,9 +34,9 @@ const consumableBrands = [
 ];
 
 const equipmentBrands = [
-  { name: "BUG-O System", origin: "USA" },
-  { name: "Tri Tool", origin: "USA" },
-  { name: "Powcon", origin: "USA" },
+  { name: "BUG-O System", origin: "USA", logo: "/brands/bugo.png", width: 140 },
+  { name: "Tri Tool", origin: "USA", logo: "/brands/tritool.png", width: 160 },
+  { name: "Powcon", origin: "USA", logo: "/brands/powcon.png", width: 140 },
   { name: "WorkSafe", origin: "" },
   { name: "Alfa PWHT Systems", origin: "" },
 ];
@@ -222,10 +222,14 @@ export default function HomePage() {
 
           <div className="border-t border-slate-100 pt-6">
             <p className="text-center text-[10px] text-slate-400 tracking-wider uppercase mb-4">{t("brandsEquipmentLabel")}</p>
-            <div className="flex flex-wrap justify-center gap-6 md:gap-10 items-center">
+            <div className="flex flex-wrap justify-center gap-8 md:gap-14 items-center">
               {equipmentBrands.map((brand) => (
-                <div key={brand.name} className="flex flex-col items-center">
-                  <span className="font-semibold text-slate-600 text-sm tracking-tight">{brand.name}</span>
+                <div key={brand.name} className="flex flex-col items-center gap-2">
+                  {brand.logo ? (
+                    <Image src={brand.logo} alt={brand.name} width={brand.width} height={40} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-8 md:h-10 w-auto" />
+                  ) : (
+                    <span className="font-bold text-slate-600 text-lg md:text-xl tracking-tight transition-colors opacity-70 hover:opacity-100 hover:text-[#0B3D91]">{brand.name}</span>
+                  )}
                   {brand.origin && <span className="text-[10px] text-slate-400">{brand.origin}</span>}
                 </div>
               ))}
