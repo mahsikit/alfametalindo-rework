@@ -104,13 +104,13 @@ export function Header() {
               <Menu className="h-5 w-5" />
             </SheetTrigger>
             <SheetContent side="right" className="w-72">
-              <SheetTitle className="text-left">
+              <SheetTitle className="text-left pr-8">
                 <Image
                   src="/logo.gif"
                   alt="PT. Alfa Metalindo Indonesia"
                   width={212}
                   height={32}
-                  className="h-8 w-auto"
+                  className="h-7 w-auto object-contain"
                   unoptimized
                 />
               </SheetTitle>
@@ -129,16 +129,18 @@ export function Header() {
                     {t(key)}
                   </Link>
                 ))}
-                <Link
-                  href={`/${locale}/contact`}
-                  onClick={() => setOpen(false)}
-                  className={cn(
-                    buttonVariants(),
-                    "mt-4 bg-[#F97316] hover:bg-orange-600 text-white border-transparent"
-                  )}
-                >
-                  {t("requestQuote")}
-                </Link>
+                <div className="mt-4 pt-4 border-t border-slate-100">
+                  <Link
+                    href={`/${locale}/contact`}
+                    onClick={() => setOpen(false)}
+                    className={cn(
+                      buttonVariants(),
+                      "w-full bg-[#F97316] hover:bg-orange-600 text-white border-transparent justify-center"
+                    )}
+                  >
+                    {t("requestQuote")}
+                  </Link>
+                </div>
               </nav>
             </SheetContent>
           </Sheet>
