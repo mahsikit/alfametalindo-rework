@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import Image from "next/image";
 import { useLocale } from "next-intl";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -91,6 +92,56 @@ export default function ProductsPage() {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{t("title")}</h1>
           <p className="text-slate-300 text-lg max-w-xl mx-auto">{t("subtitle")}</p>
+        </div>
+      </section>
+
+      {/* Premium Infinite Scrolling Brand Marquee */}
+      <section className="py-12 border-b border-slate-100 bg-white overflow-hidden">
+        <div className="container mx-auto mb-8 px-4 text-center">
+          <p className="text-xs font-semibold text-slate-400 tracking-widest uppercase">Official Distributor For Premium World-Class Brands</p>
+        </div>
+        
+        {/* Marquee Wrapper */}
+        <div 
+          className="relative flex overflow-hidden w-full group"
+          style={{ WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)', maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}
+        >
+          {/* We render two identical blocks to create the seamless loop */}
+          {[1, 2].map((groupIndex) => (
+            <div 
+              key={groupIndex} 
+              className="flex shrink-0 items-center gap-16 sm:gap-24 min-w-full animate-marquee group-hover:[animation-play-state:paused] pr-16 sm:pr-24"
+            >
+              {/* Lincoln Electric */}
+              <div className="flex items-center shrink-0">
+                <Image src="/brands/lincoln.png" alt="Lincoln Electric" width={180} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-12 w-auto" />
+              </div>
+              {/* Welding Alloys */}
+              <div className="flex items-center shrink-0">
+                <Image src="/brands/welding_alloys.png" alt="Welding Alloys" width={160} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-12 w-auto" />
+              </div>
+              {/* Daiko */}
+              <div className="flex items-center shrink-0">
+                <Image src="/brands/daiko.png" alt="Daiko Welding" width={140} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
+              </div>
+              {/* Kiswel */}
+              <div className="flex items-center shrink-0">
+                <Image src="/brands/kiswel.png" alt="Kiswel" width={140} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
+              </div>
+              {/* Nihonweld */}
+              <div className="flex items-center shrink-0">
+                <Image src="/brands/nihonweld.png" alt="Nihonweld" width={160} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
+              </div>
+              {/* Metrode (Text) */}
+              <div className="flex items-center shrink-0">
+                <span className="font-bold text-2xl text-slate-400 hover:text-[#0B3D91] transition-colors tracking-tight">METRODE</span>
+              </div>
+              {/* Techalloy (Text) */}
+              <div className="flex items-center shrink-0">
+                <span className="font-bold text-2xl text-slate-400 hover:text-[#F97316] transition-colors tracking-tight italic">Techalloy</span>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
