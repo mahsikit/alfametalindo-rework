@@ -116,12 +116,13 @@ return <span>{t("heroTagline")}</span>
 
 ## Enabling Email (Resend)
 
-Currently the contact form just logs submissions. To enable real email delivery:
+The contact forms and datasheet request forms are fully wired up to send emails directly to `jonathan.yungyung61@gmail.com`. To enable real email delivery:
 
 1. Create a free account at https://resend.com (3,000 emails/mo free)
 2. Get an API key
 3. Add `RESEND_API_KEY=re_...` to `.env.local` and Vercel env vars
-4. In `app/api/contact/route.ts`, uncomment the Resend fetch block
+
+Once added, the frontend forms will automatically send emails using this backend service.
 
 ---
 
