@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
     try {
       await resend.emails.send({
         from: "Alfa Metalindo Web <onboarding@resend.dev>",
-        to: ["marketing@alfametalindo.com"], 
+        to: ["jonathan.yungyung61@gmail.com"], 
         replyTo: email,
         subject: `New Web Inquiry from ${name} (${company || "Individual"})`,
         html: `
