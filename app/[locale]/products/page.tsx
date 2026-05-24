@@ -172,9 +172,9 @@ export default function ProductsPage() {
           <div className="mb-6">
             <p className="text-xs font-semibold text-slate-400 tracking-widest uppercase mb-3">{t("filterByProcess")}</p>
             <Tabs value={process} onValueChange={setProcess}>
-              <TabsList className="flex flex-wrap h-auto min-h-10 justify-start p-1.5 gap-2 bg-slate-100 rounded-lg w-full">
+              <TabsList className="flex !h-auto flex-wrap justify-start p-1.5 gap-2 bg-slate-100 rounded-lg w-full">
                 {processes.map((p) => (
-                  <TabsTrigger key={p} value={p} className="text-sm h-auto py-1.5 px-3">
+                  <TabsTrigger key={p} value={p} className="text-sm !h-auto py-1.5 px-3">
                     {p === "All" ? t("filterAll") : t(`processes.${p}` as any)}
                   </TabsTrigger>
                 ))}
@@ -184,11 +184,11 @@ export default function ProductsPage() {
 
           {/* Material filter */}
           <div className="mb-8">
-            <p className="text-xs font-semibold text-slate-400 tracking-widest uppercase mb-3 mt-2">{t("filterByMaterial")}</p>
+            <p className="text-xs font-semibold text-slate-400 tracking-widest uppercase mb-3 mt-4">{t("filterByMaterial")}</p>
             <Tabs value={material} onValueChange={setMaterial}>
-              <TabsList className="flex flex-wrap h-auto min-h-10 justify-start p-1.5 gap-2 bg-slate-100 rounded-lg w-full">
+              <TabsList className="flex !h-auto flex-wrap justify-start p-1.5 gap-2 bg-slate-100 rounded-lg w-full">
                 {materials.map((m) => (
-                  <TabsTrigger key={m} value={m} className="text-sm h-auto py-1.5 px-3">
+                  <TabsTrigger key={m} value={m} className="text-sm !h-auto py-1.5 px-3">
                     {m === "All" ? t("filterAll") : m}
                   </TabsTrigger>
                 ))}
