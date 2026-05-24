@@ -152,7 +152,7 @@ export default function HomePage() {
           {[1, 2].map((groupIndex) => (
             <div 
               key={groupIndex} 
-              className="flex items-center gap-16 sm:gap-24 min-w-full animate-marquee hover-pause pr-16 sm:pr-24"
+              className="flex items-center gap-16 sm:gap-24 min-w-full animate-marquee group-hover:[animation-play-state:paused] pr-16 sm:pr-24"
             >
               {/* Uploaded Image Logos */}
               <div className="flex items-center shrink-0">
