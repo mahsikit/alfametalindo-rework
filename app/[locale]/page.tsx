@@ -154,26 +154,26 @@ export default function HomePage() {
               key={groupIndex} 
               className="flex items-center gap-16 sm:gap-24 min-w-full animate-marquee hover-pause pr-16 sm:pr-24"
             >
-              {/* Premium Typographic Logos */}
+              {/* Uploaded Image Logos */}
               <div className="flex items-center shrink-0">
-                <span className="font-bold text-3xl text-slate-800 tracking-tighter">PERTAMINA</span>
+                <Image src="/clients/pertamina.png" alt="Pertamina" width={200} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
               </div>
               <div className="flex items-center shrink-0">
-                <span className="font-bold text-2xl text-slate-800 tracking-tight">TotalEnergies</span>
+                <Image src="/clients/total.png" alt="TotalEnergies" width={200} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
               </div>
               <div className="flex items-center shrink-0">
-                <span className="font-bold text-2xl text-slate-800 tracking-tight">MedcoEnergi</span>
+                <Image src="/clients/bp.png" alt="BP" width={150} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
               </div>
               <div className="flex items-center shrink-0">
-                <span className="font-black text-3xl text-slate-800 tracking-tighter">HESS</span>
+                <Image src="/clients/medco.png" alt="Medco E&P" width={200} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
               </div>
               <div className="flex items-center shrink-0">
-                <span className="font-semibold text-2xl text-slate-800 tracking-widest uppercase">Serica</span>
+                <Image src="/clients/hess.png" alt="Hess" width={160} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain h-10 w-auto" />
               </div>
               
               {/* Styled Text Logos for the rest */}
               <div className="shrink-0 flex items-center">
-                <span className="font-black text-4xl text-slate-400 hover:text-green-600 transition-colors tracking-tighter">bp</span>
+                <span className="font-semibold text-2xl text-slate-400 hover:text-slate-800 transition-colors tracking-widest uppercase">Serica</span>
               </div>
               <div className="shrink-0 flex items-center">
                 <span className="font-bold text-3xl text-slate-400 hover:text-blue-600 transition-colors tracking-widest uppercase">PGN</span>
