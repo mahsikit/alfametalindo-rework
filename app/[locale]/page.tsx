@@ -135,22 +135,64 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Client logo wall */}
-      <section className="py-10 bg-slate-50 border-b">
-        <div className="container mx-auto px-4 md:px-6">
-          <p className="text-center text-xs font-semibold text-slate-400 tracking-widest uppercase mb-6">
+      {/* Premium Infinite Client Marquee */}
+      <section className="py-14 bg-white border-b overflow-hidden">
+        <div className="container mx-auto px-4 md:px-6 mb-10">
+          <p className="text-center text-xs font-semibold text-slate-400 tracking-widest uppercase">
             {t("clientsTitle")}
           </p>
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4">
-            {clients.map((client) => (
-              <span
-                key={client}
-                className="px-4 py-2 rounded-full border border-slate-200 bg-white text-slate-600 text-sm font-medium hover:border-[#0B3D91] hover:text-[#0B3D91] transition-colors"
-              >
-                {client}
-              </span>
-            ))}
-          </div>
+        </div>
+        
+        {/* Marquee Wrapper */}
+        <div 
+          className="relative flex overflow-hidden w-full group"
+          style={{ WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)', maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)' }}
+        >
+          {/* We render two identical blocks to create the seamless loop */}
+          {[1, 2].map((groupIndex) => (
+            <div 
+              key={groupIndex} 
+              className="flex items-center gap-16 sm:gap-24 min-w-full animate-marquee hover-pause pr-16 sm:pr-24"
+            >
+              {/* Image Logos */}
+              <div className="flex items-center gap-4 shrink-0">
+                <Image src="/clients/pertamina.png" alt="Pertamina" width={50} height={50} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain" />
+                <span className="font-bold text-2xl text-slate-800 tracking-tight">PERTAMINA</span>
+              </div>
+              <div className="flex items-center gap-4 shrink-0">
+                <Image src="/clients/total.png" alt="TotalEnergies" width={45} height={45} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain" />
+                <span className="font-bold text-xl text-slate-800 tracking-tight">TotalEnergies</span>
+              </div>
+              <div className="flex items-center gap-3 shrink-0">
+                <Image src="/clients/medco.png" alt="Medco E&P" width={40} height={40} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain" />
+                <span className="font-bold text-xl text-slate-800 tracking-tight">MedcoEnergi</span>
+              </div>
+              <div className="flex items-center gap-3 shrink-0">
+                <Image src="/clients/hess.png" alt="Hess" width={45} height={45} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain" />
+                <span className="font-black text-2xl text-slate-800 tracking-tighter">HESS</span>
+              </div>
+              <div className="flex items-center shrink-0">
+                <Image src="/clients/serica.png" alt="Serica Energy" width={110} height={45} className="grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all object-contain" />
+              </div>
+              
+              {/* Styled Text Logos for the rest */}
+              <div className="shrink-0 flex items-center">
+                <span className="font-black text-4xl text-slate-400 hover:text-green-600 transition-colors tracking-tighter">bp</span>
+              </div>
+              <div className="shrink-0 flex items-center">
+                <span className="font-bold text-3xl text-slate-400 hover:text-blue-600 transition-colors tracking-widest uppercase">PGN</span>
+              </div>
+              <div className="shrink-0 flex items-center">
+                <span className="font-bold text-2xl text-slate-400 hover:text-red-600 transition-colors tracking-tight italic">ConocoPhillips</span>
+              </div>
+              <div className="shrink-0 flex items-center">
+                <span className="font-bold text-3xl text-slate-400 hover:text-red-500 transition-colors tracking-tighter">PetroChina</span>
+              </div>
+              <div className="shrink-0 flex items-center">
+                <span className="font-black text-3xl text-slate-400 hover:text-blue-700 transition-colors tracking-normal">CNOOC</span>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
