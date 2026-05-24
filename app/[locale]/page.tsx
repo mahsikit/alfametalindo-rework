@@ -111,7 +111,7 @@ export default function HomePage() {
             </Link>
             <Link
               href={`/${locale}/contact`}
-              className={cn(buttonVariants({ variant: "outline", size: "lg" }), "border-white text-white hover:bg-white hover:text-slate-900 text-base px-8")}
+              className={cn(buttonVariants({ variant: "outline", size: "lg" }), "bg-transparent border-white text-white hover:bg-white hover:text-slate-900 text-base px-8")}
             >
               {t("heroCta2")}
             </Link>
@@ -152,7 +152,7 @@ export default function HomePage() {
           {[1, 2].map((groupIndex) => (
             <div 
               key={groupIndex} 
-              className="flex items-center gap-16 sm:gap-24 min-w-full animate-marquee group-hover:[animation-play-state:paused] pr-16 sm:pr-24"
+              className="flex shrink-0 items-center gap-16 sm:gap-24 min-w-full animate-marquee group-hover:[animation-play-state:paused] pr-16 sm:pr-24"
             >
               {/* Uploaded Image Logos */}
               <div className="flex items-center shrink-0">

@@ -73,11 +73,13 @@ export function Header() {
         <div className="flex items-center gap-2">
           <button
             onClick={toggleLocale}
-            className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-slate-600 hover:text-[#0B3D91] border border-slate-200 rounded-full hover:border-[#0B3D91] transition-colors"
+            className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-slate-500 hover:text-[#0B3D91] border border-slate-200 rounded-full hover:border-[#0B3D91] transition-colors"
             aria-label="Switch language"
           >
             <Globe className="h-3.5 w-3.5" />
-            {locale === "en" ? "ID" : "EN"}
+            <span className={locale === "en" ? "font-bold text-[#0B3D91]" : ""}>EN</span>
+            <span className="text-slate-300">|</span>
+            <span className={locale === "id" ? "font-bold text-[#0B3D91]" : ""}>ID</span>
           </button>
 
           <Link
