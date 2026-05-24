@@ -96,11 +96,11 @@ export default function HomePage() {
         </div>
         <FadeIn className="container relative z-10 mx-auto px-4 md:px-6 text-center">
           <Badge className="mb-6 bg-white/10 text-white border-white/20 hover:bg-white/20 px-4 py-1.5 text-sm">
-            {t("heroBadge")}
+            Est. October 2002 · Jakarta Utara, Indonesia
           </Badge>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight max-w-4xl mx-auto">
-            {t("heroTitle")}
+            {t("heroTagline")}
           </h1>
           
           <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
