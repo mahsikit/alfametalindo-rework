@@ -45,7 +45,7 @@ export function Header() {
           <Image
             src="/logo.gif"
             alt="PT. Alfa Metalindo Indonesia"
-            width={160}
+            width={240}
             height={36}
             className="h-9 w-auto"
             priority
@@ -106,7 +106,7 @@ export function Header() {
                 <Image
                   src="/logo.gif"
                   alt="PT. Alfa Metalindo Indonesia"
-                  width={140}
+                  width={212}
                   height={32}
                   className="h-8 w-auto"
                   unoptimized

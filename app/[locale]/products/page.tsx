@@ -124,7 +124,7 @@ export default function ProductsPage() {
               <TabsList className="flex flex-wrap h-auto gap-1 bg-slate-100">
                 {processes.map((p) => (
                   <TabsTrigger key={p} value={p} className="text-sm">
-                    {p === "All" ? t("filterAll") : p}
+                    {p === "All" ? t("filterAll") : t(`processes.${p}` as any)}
                   </TabsTrigger>
                 ))}
               </TabsList>
@@ -153,7 +153,7 @@ export default function ProductsPage() {
                 <CardContent className="p-5">
                   <div className="flex gap-2 mb-2">
                     <Badge variant="outline" className="text-[10px] text-[#0B3D91] border-[#0B3D91]">
-                      {product.process}
+                      {t(`processes.${product.process}` as any)}
                     </Badge>
                     <Badge variant="secondary" className="text-[10px]">{product.material}</Badge>
                   </div>
