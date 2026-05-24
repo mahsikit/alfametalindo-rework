@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -60,12 +61,30 @@ export default function AboutPage() {
 
       {/* Story */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 md:px-6 max-w-3xl">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">{t("storyTitle")}</h2>
-          <div className="space-y-5 text-slate-600 leading-relaxed">
-            <p>{t("storyP1")}</p>
-            <p>{t("storyP2")}</p>
-            <p>{t("storyP3")}</p>
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
+            <div>
+              <h2 className="text-3xl font-bold text-slate-900 mb-8">{t("storyTitle")}</h2>
+              <div className="space-y-5 text-slate-600 leading-relaxed">
+                <p>{t("storyP1")}</p>
+                <p>{t("storyP2")}</p>
+                <p>{t("storyP3")}</p>
+              </div>
+            </div>
+            <div className="space-y-3">
+              <div className="relative rounded-2xl overflow-hidden shadow-md">
+                <Image
+                  src="/exhibition-booth-2018.jpg"
+                  alt="Alfa Metalindo booth at Manufacturing Indonesia 2018"
+                  width={600}
+                  height={450}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <p className="text-xs text-slate-400 text-center">
+                Manufacturing Indonesia 2018 — JIExpo Kemayoran, Stand F-310
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { buttonVariants } from "@/components/ui/button";
@@ -40,11 +41,16 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href={`/${locale}`} className="flex items-center gap-2">
-          <div className="flex flex-col leading-none">
-            <span className="font-bold text-[#0B3D91] text-lg tracking-tight">ALFA METALINDO</span>
-            <span className="text-[10px] text-slate-500 tracking-widest uppercase">Indonesia</span>
-          </div>
+        <Link href={`/${locale}`} className="flex items-center">
+          <Image
+            src="/logo.gif"
+            alt="PT. Alfa Metalindo Indonesia"
+            width={160}
+            height={36}
+            className="h-9 w-auto"
+            priority
+            unoptimized
+          />
         </Link>
 
         {/* Desktop nav */}
@@ -96,8 +102,15 @@ export function Header() {
               <Menu className="h-5 w-5" />
             </SheetTrigger>
             <SheetContent side="right" className="w-72">
-              <SheetTitle className="text-left font-bold text-[#0B3D91]">
-                Alfa Metalindo
+              <SheetTitle className="text-left">
+                <Image
+                  src="/logo.gif"
+                  alt="PT. Alfa Metalindo Indonesia"
+                  width={140}
+                  height={32}
+                  className="h-8 w-auto"
+                  unoptimized
+                />
               </SheetTitle>
               <nav className="flex flex-col gap-1 mt-6">
                 {navLinks.map(({ href, key }) => (
