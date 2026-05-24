@@ -268,22 +268,41 @@ export default function ProductsPage() {
           </DialogHeader>
           <form
             className="space-y-4 mt-2"
-            onSubmit={(e) => {
+            onSubmit={async (e) => {
               e.preventDefault();
+              const form = e.currentTarget;
+              const data = {
+                name: (form.elements.namedItem("name") as HTMLInputElement).value,
+                email: (form.elements.namedItem("email") as HTMLInputElement).value,
+                company: (form.elements.namedItem("company") as HTMLInputElement).value,
+                product: `Datasheet Request: ${dialogProduct?.name}`,
+                message: "I am interested in this product and would like to request its datasheet.",
+              };
+              
+              try {
+                await fetch("/api/contact", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify(data),
+                });
+              } catch (error) {
+                console.error("Failed to send datasheet request", error);
+              }
+              
               setDialogProduct(null);
             }}
           >
             <div className="space-y-1.5">
               <Label>{t("formName")}</Label>
-              <Input placeholder="John Doe" required />
+              <Input name="name" placeholder="John Doe" required />
             </div>
             <div className="space-y-1.5">
               <Label>{t("formEmail")}</Label>
-              <Input type="email" placeholder="john@company.com" required />
+              <Input name="email" type="email" placeholder="john@company.com" required />
             </div>
             <div className="space-y-1.5">
               <Label>{t("formCompany")}</Label>
-              <Input placeholder="PT Example" required />
+              <Input name="company" placeholder="PT Example" required />
             </div>
             <Button type="submit" className="w-full bg-[#0B3D91] hover:bg-blue-900 text-white">
               {t("formSubmit")}
