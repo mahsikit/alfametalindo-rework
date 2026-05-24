@@ -114,7 +114,7 @@ export default function ContactPage() {
               {/* Map embed */}
               <div className="rounded-xl overflow-hidden border h-52">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6580580888!2d106.83851!3d-6.117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMDcnMDEuMiJTIDEwNsKwNTAnMTkuMiJF!5e0!3m2!1sen!2sid!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.529243912166!2d106.8395335!3d-6.1309058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1e24f7a9e457%3A0x9c6be584a72feea0!2sAlfa%20Metalindo%20Indonesia.%20PT!5e0!3m2!1sen!2sid!4v1716503831206!5m2!1sen!2sid"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
