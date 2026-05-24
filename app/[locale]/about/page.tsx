@@ -12,20 +12,20 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 const consumableBrands = [
-  { name: "Lincoln Electric", country: "USA", spec: "Welding machines & consumables across all processes" },
-  { name: "Metrode", country: "UK", spec: "Premium exotic-alloy filler metals for oil & gas and LNG" },
-  { name: "Techalloy", country: "USA", spec: "Nickel-based welding alloys (Inconel, Hastelloy)" },
-  { name: "Kiswel", country: "Korea", spec: "Wide-range welding consumables" },
-  { name: "Nihonweld", country: "Philippines", spec: "Stainless steel & hard-surfacing consumables" },
-  { name: "Welding Alloys", country: "UK", spec: "Hard-surfacing and wear-resistant consumables" },
-  { name: "Daiko", country: "Italy", spec: "High-temperature welding consumables" },
+  { name: "Lincoln Electric", country: "USA", spec: "Welding machines & consumables across all processes", logo: "/brands/lincoln.png", width: 140 },
+  { name: "Metrode", country: "UK", spec: "Premium exotic-alloy filler metals for oil & gas and LNG", logo: "/brands/metrode.png", width: 140 },
+  { name: "Techalloy", country: "USA", spec: "Nickel-based welding alloys (Inconel, Hastelloy)", logo: "/brands/techalloy.png", width: 140 },
+  { name: "Kiswel", country: "Korea", spec: "Wide-range welding consumables", logo: "/brands/kiswel.png", width: 100 },
+  { name: "Nihonweld", country: "Philippines", spec: "Stainless steel & hard-surfacing consumables", logo: "/brands/nihonweld.png", width: 120 },
+  { name: "Welding Alloys", country: "UK", spec: "Hard-surfacing and wear-resistant consumables", logo: "/brands/welding_alloys.png", width: 120 },
+  { name: "Daiko", country: "Italy", spec: "High-temperature welding consumables", logo: "/brands/daiko.png", width: 100 },
 ];
 
 const equipmentBrands = [
-  { name: "BUG-O System International", country: "USA", spec: "Mechanized welding carriages & track automation" },
-  { name: "Tri Tool Inc.", country: "USA", spec: "Pipe cold-cutting & bevelling machines" },
+  { name: "BUG-O System International", country: "USA", spec: "Mechanized welding carriages & track automation", logo: "/brands/bugo.png", width: 100 },
+  { name: "Tri Tool Inc.", country: "USA", spec: "Pipe cold-cutting & bevelling machines", logo: "/brands/tritool.png", width: 120 },
   { name: "Advanced Instruments Inc.", country: "USA", spec: "Measurement & testing instruments" },
-  { name: "Powcon", country: "USA", spec: "Inverter welding power sources" },
+  { name: "Powcon", country: "USA", spec: "Inverter welding power sources", logo: "/brands/powcon.png", width: 120 },
   { name: "Showa Welder", country: "", spec: "Welding equipment" },
 ];
 
@@ -127,10 +127,20 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
             {consumableBrands.map((brand) => (
               <Card key={brand.name} className="hover:border-[#0B3D91] transition-colors">
-                <CardContent className="p-5">
-                  <div className="font-bold text-[#0B3D91]">{brand.name}</div>
-                  {brand.country && <Badge variant="secondary" className="mt-1 text-xs">{brand.country}</Badge>}
-                  <p className="text-xs text-slate-500 mt-2">{brand.spec}</p>
+                <CardContent className="p-5 flex flex-col gap-3">
+                  {brand.logo ? (
+                    <div className="h-10 flex items-center justify-start">
+                      <Image src={brand.logo} alt={brand.name} width={brand.width} height={40} className="object-contain max-h-full w-auto mix-blend-multiply grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100" />
+                    </div>
+                  ) : (
+                    <div className="h-10 flex items-center justify-start">
+                      <div className="font-bold text-[#0B3D91] text-lg">{brand.name}</div>
+                    </div>
+                  )}
+                  <div>
+                    {brand.country && <Badge variant="secondary" className="text-[10px]">{brand.country}</Badge>}
+                    <p className="text-xs text-slate-500 mt-2 leading-relaxed">{brand.spec}</p>
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -140,10 +150,20 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
             {equipmentBrands.map((brand) => (
               <Card key={brand.name} className="hover:border-[#0B3D91] transition-colors">
-                <CardContent className="p-5">
-                  <div className="font-bold text-slate-700">{brand.name}</div>
-                  {brand.country && <Badge variant="secondary" className="mt-1 text-xs">{brand.country}</Badge>}
-                  <p className="text-xs text-slate-500 mt-2">{brand.spec}</p>
+                <CardContent className="p-5 flex flex-col gap-3">
+                  {brand.logo ? (
+                    <div className="h-10 flex items-center justify-start">
+                      <Image src={brand.logo} alt={brand.name} width={brand.width} height={40} className="object-contain max-h-full w-auto mix-blend-multiply grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100" />
+                    </div>
+                  ) : (
+                    <div className="h-10 flex items-center justify-start">
+                      <div className="font-bold text-slate-700 text-lg">{brand.name}</div>
+                    </div>
+                  )}
+                  <div>
+                    {brand.country && <Badge variant="secondary" className="text-[10px]">{brand.country}</Badge>}
+                    <p className="text-xs text-slate-500 mt-2 leading-relaxed">{brand.spec}</p>
+                  </div>
                 </CardContent>
               </Card>
             ))}
