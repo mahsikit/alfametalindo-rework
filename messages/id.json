@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "products": "Produk",
+    "industries": "Industri",
+    "news": "Berita",
+    "contact": "Kontak",
+    "requestQuote": "Minta Penawaran"
+  },
+  "home": {
+    "heroTagline": "Mitra Pengelasan Terbaik Anda",
+    "heroSubtitle": "Kawat las premium dan paduan eksotis untuk industri minyak & gas, petrokimia, LNG, dan energi. Melayani Indonesia dan Asia Tenggara sejak 2002.",
+    "heroCta1": "Lihat Produk",
+    "heroCta2": "Hubungi Kami",
+    "brandsTitle": "Distributor Resmi Merek Kelas Dunia",
+    "industriesTitle": "Industri yang Kami Layani",
+    "industriesSubtitle": "Lebih dari 20 tahun menyuplai material las penting untuk sektor industri terbesar di Indonesia.",
+    "whyTitle": "Mengapa PT Alfa Metalindo Indonesia",
+    "whySubtitle": "Kami menggabungkan kemitraan merek global dengan keahlian lokal yang mendalam.",
+    "why1Title": "Merek Global, Keahlian Lokal",
+    "why1Desc": "Distributor resmi Lincoln Electric, Metrode, Techalloy, Kiswel, Nihonweld, dan lainnya.",
+    "why2Title": "Cakupan Proses Lengkap",
+    "why2Desc": "SMAW, GTAW, GMAW, FCAW, MCW, dan SAW — kami menyediakan consumable untuk setiap proses pengelasan.",
+    "why3Title": "Paduan Eksotis & Khusus",
+    "why3Desc": "Nickel, Duplex, Super Duplex, Titanium, Aluminium, Tembaga — material sesuai kebutuhan proyek Anda.",
+    "why4Title": "Dukungan Teknis",
+    "why4Desc": "Insinyur berpengalaman membantu Anda memilih consumable yang tepat untuk heat exchanger, pressure vessel, dan reaktor.",
+    "ctaTitle": "Siap menemukan solusi pengelasan yang tepat?",
+    "ctaSubtitle": "Tim teknis kami siap membantu Anda menentukan consumable yang tepat untuk proyek Anda.",
+    "ctaButton": "Hubungi Kami"
+  },
+  "about": {
+    "title": "Tentang Kami",
+    "heroSubtitle": "Mitra terpercaya Jakarta untuk consumable las presisi sejak 2002.",
+    "storyTitle": "Cerita Kami",
+    "storyP1": "PT. Alfa Metalindo Indonesia didirikan pada Oktober 2002 dengan misi yang jelas: menghadirkan consumable las kelas dunia dan material eksotis ke sektor industri Indonesia.",
+    "storyP2": "Selama lebih dari dua dekade, kami telah membangun hubungan erat dengan produsen global dan mendapatkan kepercayaan dari insinyur dan tim pengadaan di industri minyak & gas, petrokimia, LNG, energi, pupuk, semen, baja, dan gula.",
+    "storyP3": "Kantor kami di Ancol, Jakarta Utara berfungsi sebagai pusat operasi inventaris, tim teknis, dan dukungan pelanggan.",
+    "visionTitle": "Visi Kami",
+    "visionText": "\"Mitra Pengelasan Terbaik\" — menjadi pemasok consumable las paling terpercaya dan berkemampuan teknis di Indonesia, yang dihargai atas kualitas produk, dukungan ahli, dan pengiriman yang andal.",
+    "valuesTitle": "Nilai-Nilai Kami",
+    "value1Title": "Kualitas Utama",
+    "value1Desc": "Kami hanya menyetok produk dari produsen dengan rekam jejak terbukti dalam aplikasi industri paling menuntut.",
+    "value2Title": "Keunggulan Teknis",
+    "value2Desc": "Tim kami memahami metalurgi di balik setiap produk yang kami jual — bukan hanya nomor katalog.",
+    "value3Title": "Kemitraan",
+    "value3Desc": "Kami membangun hubungan jangka panjang dengan pelanggan, bukan sekadar transaksi.",
+    "value4Title": "Keandalan",
+    "value4Desc": "Manajemen inventaris yang ekstensif memastikan produk tersedia saat jadwal proyek Anda membutuhkannya.",
+    "brandsTitle": "Merek yang Kami Wakili",
+    "teamTitle": "Tim Kami",
+    "teamSubtitle": "Profesional berpengalaman yang berdedikasi menemukan solusi las terbaik untuk Anda."
+  },
+  "products": {
+    "title": "Produk",
+    "subtitle": "Consumable las dan material eksotis untuk setiap proses dan aplikasi.",
+    "filterAll": "Semua",
+    "filterByProcess": "Filter by Proses",
+    "filterByMaterial": "Filter berdasarkan Material",
+    "requestDatasheet": "Minta Datasheet",
+    "requestQuote": "Minta Penawaran",
+    "processLabel": "Proses",
+    "materialLabel": "Material",
+    "applicationLabel": "Aplikasi",
+    "brandLabel": "Merek",
+    "datasheetDialogTitle": "Minta Datasheet Produk",
+    "datasheetDialogDesc": "Isi detail Anda dan kami akan mengirimkan datasheet teknis lengkap ke email Anda.",
+    "formName": "Nama Lengkap",
+    "formEmail": "Alamat Email",
+    "formCompany": "Perusahaan",
+    "formSubmit": "Kirim Permintaan",
+    "processes": {
+      "SMAW": "SMAW (Las Elektroda)",
+      "GTAW": "GTAW (TIG)",
+      "GMAW": "GMAW (MIG)",
+      "FCAW": "FCAW (Flux Core)",
+      "MCW": "MCW",
+      "SAW": "SAW (Las Rendam)"
+    }
+  },
+  "industries": {
+    "title": "Industri",
+    "subtitle": "Dua dekade pengalaman menyuplai material las penting di sektor industri paling menuntut di Indonesia.",
+    "learnMore": "Lihat Produk Terkait",
+    "oil": {
+      "name": "Minyak & Gas",
+      "desc": "Aplikasi hulu dan hilir yang membutuhkan las dengan integritas tertinggi di lingkungan korosif dan bertekanan tinggi."
+    },
+    "petrochem": {
+      "name": "Petrokimia",
+      "desc": "Reaktor, tower, dan heat exchanger yang memerlukan paduan Duplex, Super Duplex, dan Nickel."
+    },
+    "lng": {
+      "name": "LNG",
+      "desc": "Aplikasi kriogenik yang membutuhkan paduan Nickel dan stainless steel dengan ketangguhan suhu rendah yang terbukti."
+    },
+    "fertilizer": {
+      "name": "Pupuk",
+      "desc": "Lingkungan pabrik amonia dan urea yang memerlukan paduan tahan korosi dan consumable tahan panas."
+    },
+    "power": {
+      "name": "Energi & Kelistrikan",
+      "desc": "Layanan suhu tinggi di boiler dan turbin yang memerlukan paduan berbasis Nickel dan tahan suhu tinggi."
+    },
+    "cement": {
+      "name": "Semen",
+      "desc": "Consumable tahan aus dan hard-surfacing untuk liner kiln, roller, dan komponen abrasi tinggi lainnya."
+    },
+    "steel": {
+      "name": "Pabrik Baja",
+      "desc": "Consumable las struktural berat untuk fabrikasi dan pemeliharaan pabrik baja."
+    },
+    "sugar": {
+      "name": "Pabrik Gula",
+      "desc": "Solusi tahan korosi dan aus untuk pemeliharaan peralatan pengolahan gula."
+    }
+  },
+  "news": {
+    "title": "Berita & Wawasan",
+    "subtitle": "Artikel teknis, pembaruan industri, dan sorotan produk dari tim kami.",
+    "readMore": "Baca Selengkapnya",
+    "minuteRead": "mnt baca"
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Hubungi tim teknis kami untuk pertanyaan produk, penawaran, dan dukungan teknis.",
+    "officeTitle": "Kantor Kami",
+    "address": "Komplek Rukan Mahkota Ancol Blok C No. 53-55, Jl. R.E. Martadinata, Jakarta Utara 14420",
+    "phoneLabel": "Telepon",
+    "faxLabel": "Fax",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "formTitle": "Kirim Pesan",
+    "formName": "Nama Lengkap",
+    "formNamePlaceholder": "Nama Anda",
+    "formEmail": "Alamat Email",
+    "formEmailPlaceholder": "email@perusahaan.com",
+    "formCompany": "Nama Perusahaan",
+    "formCompanyPlaceholder": "PT Contoh Indonesia",
+    "formIndustry": "Industri",
+    "formIndustryPlaceholder": "Pilih industri Anda",
+    "formProduct": "Produk / Material yang Diminati",
+    "formProductPlaceholder": "mis. Elektroda paduan Nickel untuk SMAW",
+    "formMessage": "Pesan",
+    "formMessagePlaceholder": "Ceritakan tentang proyek atau pertanyaan Anda...",
+    "formSubmit": "Kirim Pesan",
+    "formSuccess": "Terima kasih! Kami akan menghubungi Anda dalam 1 hari kerja.",
+    "formError": "Terjadi kesalahan. Silakan coba lagi atau email kami langsung.",
+    "industries": ["Minyak & Gas", "Petrokimia", "LNG", "Pupuk", "Energi", "Semen", "Baja", "Gula", "Lainnya"]
+  },
+  "footer": {
+    "tagline": "Mitra Pengelasan Terbaik Anda",
+    "copyright": "© {year} PT. Alfa Metalindo Indonesia. Hak cipta dilindungi.",
+    "quickLinks": "Tautan Cepat",
+    "contact": "Kontak"
+  }
+}
