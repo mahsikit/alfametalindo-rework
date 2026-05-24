@@ -10,33 +10,42 @@
   },
   "home": {
     "heroTagline": "A Better Welding Partner",
-    "heroSubtitle": "Premium welding consumables and exotic alloys for oil & gas, petrochemical, LNG, and power industries. Serving Indonesia and Southeast Asia since 2002.",
+    "heroSubtitle": "Premium welding consumables and exotic alloys for Indonesia's energy industry. Trusted by Pertamina, Total, BP, and more since October 2002.",
     "heroCta1": "Browse Products",
     "heroCta2": "Contact Us",
+    "statsYears": "23+",
+    "statsYearsLabel": "Years of Service",
+    "statsProjects": "100+",
+    "statsProjectsLabel": "Projects Supplied",
+    "statsBrands": "13+",
+    "statsBrandsLabel": "Brand Partners",
+    "clientsTitle": "Trusted by Indonesia's Energy Majors Since 2002",
     "brandsTitle": "Authorized Distributor of World-Class Brands",
+    "brandsConsumablesLabel": "Welding Consumables",
+    "brandsEquipmentLabel": "Equipment & Automation",
     "industriesTitle": "Industries We Serve",
-    "industriesSubtitle": "Over 20 years supplying mission-critical welding materials to Indonesia's most demanding sectors.",
+    "industriesSubtitle": "Over 23 years supplying mission-critical welding materials to Indonesia's oil & gas, LNG, petrochemical, and heavy industries.",
     "whyTitle": "Why PT Alfa Metalindo Indonesia",
-    "whySubtitle": "We combine global brand partnerships with deep local expertise.",
-    "why1Title": "Global Brands, Local Expertise",
-    "why1Desc": "Authorized distributor of Lincoln Electric, Metrode, Techalloy, Kiswel, Nihonweld, and more.",
-    "why2Title": "Full Process Coverage",
-    "why2Desc": "SMAW, GTAW, GMAW, FCAW, MCW, and SAW — we stock consumables for every welding process.",
-    "why3Title": "Exotic & Specialty Alloys",
-    "why3Desc": "Nickel, Duplex, Super Duplex, Titanium, Aluminum, Copper — materials your project demands.",
-    "why4Title": "Technical Support",
-    "why4Desc": "Experienced engineers help you select the right consumable for heat exchangers, pressure vessels, and reactors.",
+    "whySubtitle": "We specialize where others don't — exotic alloys, Metrode energy-grade consumables, and turnkey welding services.",
+    "why1Title": "Exotic-Alloy Specialists",
+    "why1Desc": "Duplex, Super Duplex, Inconel, and Titanium — the high-grade materials that demanding oil & gas projects can't compromise on. Most distributors don't stock them. We do.",
+    "why2Title": "Metrode UK — Energy-Grade Consumables",
+    "why2Desc": "Metrode is the premium exotic-alloy filler metal line for refineries, LNG plants, and petrochemical vessels. We are proud to be Metrode's authorized distributor in Indonesia.",
+    "why3Title": "Beyond Products: Full-Service Capability",
+    "why3Desc": "Welding habitat rental (WorkSafe), PWHT machines (Alfa PWHT Systems), and pipe cold-cut & bevel tools (Tri Tool) — turnkey hot-work solutions for offshore and pressurized environments.",
+    "why4Title": "23 Years, 100+ Projects",
+    "why4Desc": "Trusted since October 2002 by Pertamina, PGN, Total, BP, ConocoPhillips, Medco E&P, Hess, PetroChina, CNOOC, and Indonesia's other energy majors.",
     "ctaTitle": "Ready to find the right welding solution?",
     "ctaSubtitle": "Our technical team is ready to help you specify the exact consumable for your next project.",
     "ctaButton": "Get in Touch"
   },
   "about": {
     "title": "About Us",
-    "heroSubtitle": "Jakarta's trusted partner for precision welding consumables since 2002.",
+    "heroSubtitle": "Founded in October 2002 — Jakarta's specialist for high-grade welding consumables and exotic alloys.",
     "storyTitle": "Our Story",
-    "storyP1": "PT. Alfa Metalindo Indonesia was established in October 2002 with a clear mission: to bring world-class welding consumables and exotic materials to Indonesia's industrial sector.",
-    "storyP2": "Over more than two decades, we have built deep relationships with global manufacturers and earned the trust of engineers and procurement teams across oil & gas, petrochemical, LNG, power, fertilizer, cement, steel, and sugar industries.",
-    "storyP3": "Our office in Ancol, North Jakarta serves as the hub for our inventory, technical team, and customer support operations.",
+    "storyP1": "PT Alfa Metalindo Indonesia was founded in October 2002 by Widiarty Wirawan in Jakarta Utara with a clear mission: to bring world-class welding consumables and exotic alloys to Indonesia's industrial sector — and to become the most trusted partner for the country's most demanding projects.",
+    "storyP2": "Over more than two decades, Alfa Metalindo has grown into what we believe is Indonesia's leading distributor of high-grade welding consumables to the oil & gas sector. Our clients include Pertamina, PGN, Total, BP, ConocoPhillips, Medco E&P, Hess, PetroChina, CNOOC, and APD Serica Energy — names that demand only the highest quality and supply reliability.",
+    "storyP3": "We operate from our office at Komplek Rukan Mahkota Ancol, Jakarta Utara. With over 100 projects supplied and 13 global brand partnerships, we bring both the product range and the technical expertise to support your most critical welding requirements.",
     "visionTitle": "Our Vision",
     "visionText": "\"A Better Welding Partner\" — to be the most trusted and technically capable welding consumable supplier in Indonesia, valued for quality products, expert support, and reliable delivery.",
     "valuesTitle": "Our Values",
@@ -49,8 +58,14 @@
     "value4Title": "Reliability",
     "value4Desc": "Extensive inventory management ensures products are available when your project schedule demands it.",
     "brandsTitle": "Brands We Represent",
-    "teamTitle": "Our Team",
-    "teamSubtitle": "Experienced professionals dedicated to finding you the right welding solution."
+    "brandsConsumablesLabel": "Welding Consumables",
+    "brandsEquipmentLabel": "Equipment & Automation",
+    "brandsOwnLabel": "Our Own Lines",
+    "leadershipTitle": "Leadership",
+    "leadershipName": "Widiarty Wirawan",
+    "leadershipRole": "Owner & Director",
+    "leadershipEdu": "Bachelor of Business, Universitas Tarumanagara",
+    "teamNote": "Supported by dedicated teams in Marketing, Sales Engineering, Technical Support, and Accounting."
   },
   "products": {
     "title": "Products",
@@ -70,6 +85,20 @@
     "formEmail": "Email Address",
     "formCompany": "Company",
     "formSubmit": "Send Request",
+    "metrodeTitle": "Download the Metrode Energy Markets Catalog",
+    "metrodeDesc": "Full product range for oil & gas, LNG, and petrochemical welding — hosted on our server.",
+    "metrodeButton": "Download PDF",
+    "servicesTitle": "Beyond Products: Our Service Capabilities",
+    "servicesSubtitle": "We don't just supply consumables — we support your project from specification to execution.",
+    "service1Title": "Welding Habitat Rental",
+    "service1Brand": "WorkSafe",
+    "service1Desc": "Pressurized safety enclosures for live offshore and hot-work environments. WorkSafe habitats allow safe welding in classified areas without plant shutdown.",
+    "service2Title": "Post-Weld Heat Treatment",
+    "service2Brand": "Alfa PWHT Systems",
+    "service2Desc": "Rental and on-site PWHT services using our own Alfa PWHT Systems equipment. Stress-relief and code-compliant heat treatment for pressure vessels and pipelines.",
+    "service3Title": "Pipe Cold-Cutting & Bevelling",
+    "service3Brand": "Tri Tool",
+    "service3Desc": "Tri Tool cold-cutting and bevelling machines for precise pipe end preparation — no heat, no distortion, fit-for-purpose in classified areas.",
     "processes": {
       "SMAW": "SMAW (Stick)",
       "GTAW": "GTAW (TIG)",
@@ -85,40 +114,56 @@
     "learnMore": "See Related Products",
     "oil": {
       "name": "Oil & Gas",
-      "desc": "Upstream and downstream applications requiring the highest integrity welds in corrosive and high-pressure environments."
+      "desc": "Upstream and downstream applications requiring the highest integrity welds. We supply Duplex, Super Duplex, and Nickel alloys for corrosive and high-pressure O&G environments."
     },
     "petrochem": {
       "name": "Petrochemical",
-      "desc": "Reactors, towers, and heat exchangers where Duplex, Super Duplex, and Nickel alloys are essential."
+      "desc": "Reactors, towers, and heat exchangers where Duplex, Super Duplex, and Nickel alloys are essential for long-term integrity."
     },
     "lng": {
       "name": "LNG",
-      "desc": "Cryogenic applications demanding Nickel alloys and stainless steels with proven low-temperature toughness."
+      "desc": "Cryogenic applications demanding Nickel alloys, 9% Ni steel consumables, and stainless steels with proven low-temperature toughness."
     },
     "fertilizer": {
       "name": "Fertilizer",
-      "desc": "Ammonia and urea plant environments requiring corrosion-resistant alloys and heat-resistant consumables."
+      "desc": "Ammonia and urea plant environments requiring corrosion-resistant alloys and heat-resistant consumables for reactors and vessels."
     },
     "power": {
       "name": "Power",
-      "desc": "High-temperature service in boilers and turbines where Nickel-based and high-temperature alloys perform."
+      "desc": "High-temperature service in boilers and turbines where Nickel-based and high-temperature alloys deliver reliable long-term performance."
     },
     "cement": {
       "name": "Cement",
-      "desc": "Wear-resistant and hard-surfacing consumables for kiln liners, rollers, and other high-abrasion components."
+      "desc": "Wear-resistant and hard-surfacing consumables (Welding Alloys) for kiln liners, rollers, and other high-abrasion components."
     },
     "steel": {
       "name": "Steel Plants",
-      "desc": "Heavy structural welding consumables for steel plant fabrication and maintenance."
+      "desc": "Heavy structural welding consumables for steel plant fabrication and maintenance, including hard-surfacing for wear parts."
     },
     "sugar": {
       "name": "Sugar Plants",
-      "desc": "Corrosion and wear-resistant solutions for sugar processing equipment maintenance."
+      "desc": "Corrosion and wear-resistant solutions — including Lincoln Electric Lincore hard-surfacing — for sugar processing equipment maintenance."
     }
   },
   "news": {
-    "title": "News & Insights",
-    "subtitle": "Technical articles, industry updates, and product highlights from our team.",
+    "title": "News & Milestones",
+    "subtitle": "Our journey since October 2002 — exhibitions, partnerships, and 23 years of supplying Indonesia's energy sector.",
+    "timelineTitle": "Company Timeline",
+    "milestone1Year": "2002",
+    "milestone1Title": "Founded in Jakarta Utara",
+    "milestone1Desc": "PT Alfa Metalindo Indonesia is established in October 2002 by Widiarty Wirawan, with a mission to supply world-class welding consumables to Indonesia's oil & gas industry.",
+    "milestone2Year": "2018",
+    "milestone2Title": "Manufacturing Indonesia — JIExpo Kemayoran",
+    "milestone2Desc": "Alfa Metalindo participates in Manufacturing Indonesia 2018 at JIExpo Kemayoran, Stand F-310, presenting the latest Lincoln Electric, Metrode, and BUG-O System solutions to Indonesia's industrial market.",
+    "milestone3Year": "2019",
+    "milestone3Title": "Manufacturing Surabaya",
+    "milestone3Desc": "We expand our exhibition presence to Manufacturing Surabaya, reaching customers across East Java's petrochemical and industrial base.",
+    "milestone4Year": "2026",
+    "milestone4Title": "23 Years, 100+ Projects",
+    "milestone4Desc": "More than two decades of supplying Indonesia's energy sector — from upstream oil & gas to LNG, fertilizer, and power generation. Trusted by Pertamina, PGN, Total, BP, ConocoPhillips, and more.",
+    "ctaTitle": "Have a project in mind?",
+    "ctaDesc": "Get in touch with our technical team for product specifications and quotations.",
+    "ctaButton": "Contact Us",
     "readMore": "Read More",
     "minuteRead": "min read"
   },
@@ -126,7 +171,7 @@
     "title": "Contact Us",
     "subtitle": "Get in touch with our technical team for product inquiries, quotations, and technical support.",
     "officeTitle": "Our Office",
-    "address": "Komplek Rukan Mahkota Ancol Blok C No. 53-55, Jl. R.E. Martadinata, Jakarta Utara 14420",
+    "address": "Komplek Rukan Mahkota Ancol Blok C No. 53-55, Jl. R.E. Martadinata, Pademangan Barat, Jakarta Utara 14420",
     "phoneLabel": "Phone",
     "faxLabel": "Fax",
     "emailLabel": "Email",
@@ -151,6 +196,7 @@
   },
   "footer": {
     "tagline": "A Better Welding Partner",
+    "distributorStrap": "Authorized distributor of Lincoln Electric · Metrode · Techalloy · Daiko · Welding Alloys · Kiswel · Nihonweld",
     "copyright": "© {year} PT. Alfa Metalindo Indonesia. All rights reserved.",
     "quickLinks": "Quick Links",
     "contact": "Contact"

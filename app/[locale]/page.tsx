@@ -11,7 +11,8 @@ import {
   Flame,
   Layers,
   Wrench,
-  HeadphonesIcon,
+  ShieldCheck,
+  Factory,
 } from "lucide-react";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -22,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const brands = [
+const consumableBrands = [
   { name: "Lincoln Electric", origin: "USA" },
   { name: "Metrode", origin: "UK" },
   { name: "Techalloy", origin: "USA" },
@@ -32,15 +33,36 @@ const brands = [
   { name: "Daiko", origin: "Italy" },
 ];
 
+const equipmentBrands = [
+  { name: "BUG-O System", origin: "USA" },
+  { name: "Tri Tool", origin: "USA" },
+  { name: "Powcon", origin: "USA" },
+  { name: "WorkSafe", origin: "" },
+  { name: "Alfa PWHT Systems", origin: "" },
+];
+
+const clients = [
+  "Pertamina",
+  "PGN",
+  "Total",
+  "BP",
+  "ConocoPhillips",
+  "Medco E&P",
+  "Hess",
+  "PetroChina",
+  "CNOOC",
+  "APD Serica Energy",
+];
+
 const industryIcons: Record<string, React.ReactNode> = {
   oil: <Flame className="h-7 w-7" />,
   petrochem: <Layers className="h-7 w-7" />,
   lng: <CheckCircle2 className="h-7 w-7" />,
-  fertilizer: <Wrench className="h-7 w-7" />,
+  fertilizer: <Factory className="h-7 w-7" />,
   power: <Flame className="h-7 w-7" />,
   cement: <Layers className="h-7 w-7" />,
   steel: <Wrench className="h-7 w-7" />,
-  sugar: <HeadphonesIcon className="h-7 w-7" />,
+  sugar: <ShieldCheck className="h-7 w-7" />,
 };
 
 export default function HomePage() {
@@ -49,10 +71,10 @@ export default function HomePage() {
   const locale = useLocale();
 
   const whyItems = [
-    { titleKey: "why1Title", descKey: "why1Desc", icon: <CheckCircle2 className="h-8 w-8 text-[#F97316]" /> },
+    { titleKey: "why1Title", descKey: "why1Desc", icon: <ShieldCheck className="h-8 w-8 text-[#F97316]" /> },
     { titleKey: "why2Title", descKey: "why2Desc", icon: <Layers className="h-8 w-8 text-[#F97316]" /> },
-    { titleKey: "why3Title", descKey: "why3Desc", icon: <Flame className="h-8 w-8 text-[#F97316]" /> },
-    { titleKey: "why4Title", descKey: "why4Desc", icon: <HeadphonesIcon className="h-8 w-8 text-[#F97316]" /> },
+    { titleKey: "why3Title", descKey: "why3Desc", icon: <Wrench className="h-8 w-8 text-[#F97316]" /> },
+    { titleKey: "why4Title", descKey: "why4Desc", icon: <CheckCircle2 className="h-8 w-8 text-[#F97316]" /> },
   ] as const;
 
   const industryKeys = ["oil", "petrochem", "lng", "fertilizer", "power", "cement", "steel", "sugar"] as const;
@@ -60,19 +82,19 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-slate-900">
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=1600&q=80"
             alt="Industrial welding"
             fill
-            className="object-cover opacity-30"
+            className="object-cover opacity-25"
             priority
           />
         </div>
         <div className="relative z-10 container mx-auto px-4 md:px-6 text-center text-white">
           <div className="inline-flex items-center gap-2 bg-[#F97316]/20 border border-[#F97316]/40 text-[#F97316] px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-            Est. 2002 · Jakarta, Indonesia
+            Est. October 2002 · Jakarta Utara, Indonesia
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
             {t("heroTagline")}
@@ -94,22 +116,73 @@ export default function HomePage() {
               {t("heroCta2")}
             </Link>
           </div>
+
+          {/* Stat row */}
+          <div className="mt-14 grid grid-cols-3 gap-4 max-w-sm mx-auto border-t border-white/10 pt-10">
+            <div>
+              <div className="text-3xl font-bold text-[#F97316]">{t("statsYears")}</div>
+              <div className="text-xs text-slate-400 mt-1">{t("statsYearsLabel")}</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-[#F97316]">{t("statsProjects")}</div>
+              <div className="text-xs text-slate-400 mt-1">{t("statsProjectsLabel")}</div>
+            </div>
+            <div>
+              <div className="text-3xl font-bold text-[#F97316]">{t("statsBrands")}</div>
+              <div className="text-xs text-slate-400 mt-1">{t("statsBrandsLabel")}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Client logo wall */}
+      <section className="py-10 bg-slate-50 border-b">
+        <div className="container mx-auto px-4 md:px-6">
+          <p className="text-center text-xs font-semibold text-slate-400 tracking-widest uppercase mb-6">
+            {t("clientsTitle")}
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4">
+            {clients.map((client) => (
+              <span
+                key={client}
+                className="px-4 py-2 rounded-full border border-slate-200 bg-white text-slate-600 text-sm font-medium hover:border-[#0B3D91] hover:text-[#0B3D91] transition-colors"
+              >
+                {client}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Brands strip */}
-      <section className="py-10 bg-white border-b">
+      <section className="py-12 bg-white border-b">
         <div className="container mx-auto px-4 md:px-6">
           <p className="text-center text-sm font-semibold text-slate-400 tracking-widest uppercase mb-8">
             {t("brandsTitle")}
           </p>
-          <div className="flex flex-wrap justify-center gap-6 md:gap-10 items-center">
-            {brands.map((brand) => (
-              <div key={brand.name} className="flex flex-col items-center">
-                <span className="font-bold text-[#0B3D91] text-sm md:text-base tracking-tight">{brand.name}</span>
-                <span className="text-[10px] text-slate-400">{brand.origin}</span>
-              </div>
-            ))}
+
+          <div className="mb-2">
+            <p className="text-center text-[10px] text-slate-400 tracking-wider uppercase mb-4">{t("brandsConsumablesLabel")}</p>
+            <div className="flex flex-wrap justify-center gap-6 md:gap-10 items-center mb-8">
+              {consumableBrands.map((brand) => (
+                <div key={brand.name} className="flex flex-col items-center">
+                  <span className="font-bold text-[#0B3D91] text-sm md:text-base tracking-tight">{brand.name}</span>
+                  {brand.origin && <span className="text-[10px] text-slate-400">{brand.origin}</span>}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="border-t border-slate-100 pt-6">
+            <p className="text-center text-[10px] text-slate-400 tracking-wider uppercase mb-4">{t("brandsEquipmentLabel")}</p>
+            <div className="flex flex-wrap justify-center gap-6 md:gap-10 items-center">
+              {equipmentBrands.map((brand) => (
+                <div key={brand.name} className="flex flex-col items-center">
+                  <span className="font-semibold text-slate-600 text-sm tracking-tight">{brand.name}</span>
+                  {brand.origin && <span className="text-[10px] text-slate-400">{brand.origin}</span>}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -147,7 +220,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyItems.map((item) => (
-              <div key={item.titleKey} className="flex flex-col items-start gap-3 p-6 rounded-xl bg-slate-50 border">
+              <div key={item.titleKey} className="flex flex-col items-start gap-3 p-6 rounded-xl bg-slate-50 border hover:border-[#0B3D91] transition-colors">
                 {item.icon}
                 <h3 className="font-bold text-slate-900">{t(item.titleKey)}</h3>
                 <p className="text-sm text-slate-600">{t(item.descKey)}</p>

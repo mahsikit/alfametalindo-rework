@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Download, ShieldCheck, Flame, Wrench } from "lucide-react";
 
 type Product = {
   id: string;
@@ -50,6 +51,27 @@ const products: Product[] = [
 const processes = ["All", "SMAW", "GTAW", "GMAW", "FCAW", "MCW", "SAW"];
 const materials = ["All", "Nickel", "Duplex", "Super Duplex", "Stainless Steel", "Titanium", "Hard Surfacing", "Carbon Steel"];
 
+const services = [
+  {
+    icon: ShieldCheck,
+    brandKey: "service1Brand" as const,
+    titleKey: "service1Title" as const,
+    descKey: "service1Desc" as const,
+  },
+  {
+    icon: Flame,
+    brandKey: "service2Brand" as const,
+    titleKey: "service2Title" as const,
+    descKey: "service2Desc" as const,
+  },
+  {
+    icon: Wrench,
+    brandKey: "service3Brand" as const,
+    titleKey: "service3Title" as const,
+    descKey: "service3Desc" as const,
+  },
+];
+
 export default function ProductsPage() {
   const t = useTranslations("products");
   const locale = useLocale();
@@ -71,6 +93,27 @@ export default function ProductsPage() {
           <p className="text-slate-300 text-lg max-w-xl mx-auto">{t("subtitle")}</p>
         </div>
       </section>
+
+      {/* Metrode catalog banner */}
+      <div className="bg-[#0B3D91]">
+        <div className="container mx-auto px-4 md:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="text-white flex items-center gap-3">
+            <Download className="h-5 w-5 text-[#F97316] shrink-0" />
+            <div>
+              <p className="font-semibold text-sm">{t("metrodeTitle")}</p>
+              <p className="text-blue-200 text-xs">{t("metrodeDesc")}</p>
+            </div>
+          </div>
+          <a
+            href="https://alfametalindo.com/Metrode-Energy-Markets.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(buttonVariants({ size: "sm" }), "bg-[#F97316] hover:bg-orange-600 text-white border-transparent shrink-0 text-xs")}
+          >
+            {t("metrodeButton")}
+          </a>
+        </div>
+      </div>
 
       <section className="py-12 bg-slate-50">
         <div className="container mx-auto px-4 md:px-6">
@@ -139,6 +182,26 @@ export default function ProductsPage() {
                   </div>
                 </CardContent>
               </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Beyond Products — Services */}
+      <section className="py-16 bg-[#0B3D91] text-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">{t("servicesTitle")}</h2>
+            <p className="text-blue-200 max-w-xl mx-auto">{t("servicesSubtitle")}</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {services.map(({ icon: Icon, brandKey, titleKey, descKey }) => (
+              <div key={titleKey} className="bg-white/10 rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-colors">
+                <Icon className="h-8 w-8 text-[#F97316] mb-4" />
+                <p className="text-xs text-[#F97316] font-bold tracking-wide mb-1">{t(brandKey)}</p>
+                <h3 className="font-bold text-white mb-2">{t(titleKey)}</h3>
+                <p className="text-blue-100 text-sm leading-relaxed">{t(descKey)}</p>
+              </div>
             ))}
           </div>
         </div>

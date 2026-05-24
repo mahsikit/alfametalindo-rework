@@ -29,6 +29,7 @@ export function Footer() {
             </div>
             <p className="text-sm text-slate-400 mb-1">{t("tagline")}</p>
             <p className="text-xs text-slate-500 mt-3">Est. October 2002</p>
+            <p className="text-[10px] text-slate-600 mt-2 leading-relaxed">{t("distributorStrap")}</p>
           </div>
 
           <div>
